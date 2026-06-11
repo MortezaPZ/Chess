@@ -46,4 +46,4 @@ When a pawn reaches the last rank, a promotion prompt lets you choose the new pi
 
 ## 👤 Author
 
-Morteza Pazhoum — [@pzhm-labs](https://github.com/MortezaPZ)
+Morteza Pazhoum — [@MortezaPZ](https://github.com/MortezaPZ)
