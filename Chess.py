@@ -1,4 +1,3 @@
-# هم گروهی محمد مهدی کاظمی
 import pygame
 import copy
 class GameState: # روند بازی مثل جا به جایی مهره ها و کیش و مات اینجا انجام میشه
@@ -453,8 +452,7 @@ class Board:
     def load_images(self):   # این تابع برای اینه که عکس هارو لود کنه
         self.pieces = ['bR', 'bN', 'bB', 'bQ', 'bK', 'bP', 'wR', 'wN', 'wB', 'wQ', 'wK', 'wP']
         for piece in self.pieces:
-            self.IMAGES[piece] = pygame.transform.scale(pygame.image.load(piece+'.png'), (self.SQ_SIZE, self.SQ_SIZE))
-    
+            self.IMAGES[piece] = pygame.transform.scale(pygame.image.load("images/" + piece + ".png"), (self.SQ_SIZE, self.SQ_SIZE))
     def draw_board(self,screen):   # این تابع عم برای رسم کردن برد بازی هستش
         colors = [pygame.Color("#F2DEBC"), pygame.Color("#C7A165")]
         for r in range(self.DIMENSION):
