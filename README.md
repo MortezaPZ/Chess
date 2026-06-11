@@ -21,7 +21,7 @@ pip install pygame
 ## ▶️ Running the Game
 
 ```bash
-python chess1.py
+python Chess.py
 ```
 
 > Make sure the piece image assets (e.g. `wP.png`, `bK.png`) are in the same directory as the script.
