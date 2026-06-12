@@ -45,5 +45,6 @@ When a pawn reaches the last rank, a promotion prompt lets you choose the new pi
 | `Board` | Rendering and event handling via Pygame |
 
 ## 👤 Author
+Morteza Pazhoum — @MortezaPZ
 
-Morteza Pazhoum — [@MortezaPZ](https://github.com/MortezaPZ)
+K.N. Toosi University of Technology — Computer Science
