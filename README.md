@@ -1,50 +1,38 @@
-# ♟️ Chess
+# Chess
 
-A fully playable chess game with a graphical interface, built in Python using Pygame.
+A mouse-driven chess game built with Python and Pygame.
 
-## ✨ Features
+## Features
 
-- ♟️ Complete 8×8 chessboard with a graphical interface
-- ✅ Full move validation for all pieces
-- 👑 Check and checkmate detection
-- 🤝 Draw detection (stalemate & two-king rule)
-- 🏰 Special moves: castling, en passant, and pawn promotion
+- Legal move highlighting for each selected piece
+- Check and checkmate detection
+- Castling, en passant, and pawn promotion
+- Stalemate and bare-kings draw handling
 
-## 📦 Requirements
+## Requirements
 
-- Python 3.x
+- Python 3
 - Pygame
+
+Install Pygame:
+
 ```bash
-pip install pygame
+python -m pip install pygame
 ```
 
-## ▶️ Running the Game
+## Run
+
+From the repository root:
 
 ```bash
 python Chess.py
 ```
 
-> Make sure the piece image assets (e.g. `wP.png`, `bK.png`) are in the same directory as the script.
+Select a piece to see its legal destinations, then click a destination square to move. When a pawn reaches the last rank, choose its promotion piece in the prompt.
 
-## 🎮 How to Play
+## Project layout
 
-The game is controlled entirely with the mouse:
+- `Chess.py` contains the game state, move rules, and Pygame interface.
+- `images/` contains the piece sprites loaded by the game.
 
-1. **First click** — select a piece; its legal moves are highlighted.
-2. **Second click** — move the piece to the destination square.
-
-When a pawn reaches the last rank, a promotion prompt lets you choose the new piece.
-
-## 🗂️ Project Structure
-
-| Component | Responsibility |
-|-----------|----------------|
-| `GameState` | Core game logic, move validation, check/checkmate/draw detection |
-| `King`, `Queen`, `Rook`, `Bishop`, `Knight`, `Pawn` | Per-piece move generation |
-| `Move` | Stores coordinates and metadata for a single move |
-| `Board` | Rendering and event handling via Pygame |
-
-## 👤 Author
-Morteza Pazhoum — @MortezaPZ
-
-K.N. Toosi University of Technology — Computer Science
+Keep the working directory at the repository root so the relative image paths resolve.
