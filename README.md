@@ -36,3 +36,7 @@ Select a piece to see its legal destinations, then click a destination square to
 - `images/` contains the piece sprites loaded by the game.
 
 Keep the working directory at the repository root so the relative image paths resolve.
+
+## Folder guides
+
+- [`images/`](<images/README.md>)
